@@ -5,8 +5,8 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                bat 'dir'
-                bat 'echo "hello all" > sample.txt' 
+                sh 'dir'
+                sh 'echo "hello all" > sample.txt' 
             }
         }
         stage('Gouri') {
