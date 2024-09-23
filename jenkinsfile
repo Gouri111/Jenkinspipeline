@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                bat 'dir'
+                bat 'echo "hello all" > sample.txt' 
+            }
+        }
+        stage('Gouri') {
+            steps {
+                echo 'hello earth'
+                
+            }
+        }
+        stage('Manu') {
+            steps {
+                echo 'Hello sun'
+            }
+        }
+        stage('Viji') {
+            steps {
+                echo 'hello moon'
+            }
+        }
+    }
+}
+
